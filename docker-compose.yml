@@ -11,7 +11,7 @@ services:
     volumes:
     - /data/springboot-app
   mysqldb:
-    image: mysql:5.7
+    image: mysql
     networks:
     - springboot-db-net
     environment:
@@ -21,4 +21,3 @@ services:
     - /data/mysql
 networks:
   springboot-db-net:
-    driver: bridge
